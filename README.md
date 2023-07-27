@@ -1,2 +1,3 @@
-# restful_sql_api
+# Restaurants Restful API
+Author : ** Rattana Jirawattanakij **
  

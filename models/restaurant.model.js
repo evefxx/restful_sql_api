@@ -30,5 +30,11 @@ const Restaurant = sequelize.define("restaurant",{
         defaultValue: DataTypes.NOW,
     },
 });
-
+//Restaurant.sync({force:false})
+//    .then(()=>{
+//      console.log("Table created or updated");
+//})
+//    .catch((error) =>{
+//      console.log("")
+//})
 module.exports = Restaurant;
