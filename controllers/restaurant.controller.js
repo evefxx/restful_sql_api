@@ -16,7 +16,7 @@ Restaurant.getAll = async () => {
     try {
         const restaurants = await Restaurant.findAll();
         //console.log(restaurants);
-        return restaurants.maps(restaurant => restaurant.toJSON());
+        return restaurants.map(restaurant => restaurant.toJSON());
     } catch (error) {
         console.error("error:", error);
         throw error;

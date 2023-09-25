@@ -1,3 +1,1 @@
-# Restaurants Restful API
-Author : ** Rattana Jirawattanakij **
- 
+# cyclic_restful_api

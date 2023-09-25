@@ -3,8 +3,14 @@ const dbConfig = require("../config/db.config");
 //Create sequelize instance
 const sequelize = new Sequelize(dbConfig.DB, dbConfig.USER, dbConfig.PASSWORD,{
     host:dbConfig.HOST,
-    dialect:"mysql"
-})
+    dialect:"mysql",
+  dialectOptions: {
+    ssl: {
+      require: true,
+      rejectUnauthorized: false,
+    },
+  },
+});
 
 //Test the database connection 
 async function testConnection(){
